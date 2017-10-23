@@ -35,6 +35,7 @@ resource "aws_instance" "gh1" {
   tags {
     Name = "application-server1"
   }
+  vpc_id = 
 }
 
 resource "aws_instance" "gh2" {
@@ -43,6 +44,7 @@ resource "aws_instance" "gh2" {
   tags {
     Name = "application-server2"
   }
+  vpc_id =
 }
 
 resource "aws_instance" "db" {
@@ -51,6 +53,7 @@ resource "aws_instance" "db" {
   tags {
     Name = "database-server"
   }
+  vpc_id =
 }
 
 
